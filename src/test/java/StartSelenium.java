@@ -9,6 +9,6 @@ public class StartSelenium {
     @Test
     public void test(){
         wd = new ChromeDriver();
-        wd.get("https://telranedu.web.app/");
+        wd.get("https://telranedu.web.app/home");
     }
 }
