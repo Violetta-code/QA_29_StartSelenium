@@ -9,6 +9,20 @@ public class StartSelenium {
     @Test
     public void test(){
         wd = new ChromeDriver();
-        wd.get("https://telranedu.web.app/home");
+        // =====START==========
+        // wd.get("https://telranedu.web.app/home"); // without history
+        wd.navigate().to("https://telranedu.web.app/home");
+
+        //=======BACK==========
+        wd.navigate().back();
+        wd.navigate().forward();
+        wd.navigate().refresh();
+
+
+        //======FINISH==========
+        //wd.close();
+     //   wd.quit();
     }
+
+
 }
