@@ -44,20 +44,16 @@ public class HomeWork1 {
         WebElement id2= wd.findElement(By.cssSelector("#root"));
 
         //by attribute
-        WebElement el1= wd.findElement(By.name("[name='registration']"));
-        WebElement el2= wd.findElement(By.cssSelector("[name='registration']"));
+        WebElement el1= wd.findElement(By.cssSelector("[name='registration']"));
 
-        WebElement el3= wd.findElement(By.cssSelector("[href='/home']"));
-        WebElement el4= wd.findElement(By.cssSelector("[href='/login']"));
+        WebElement el2= wd.findElement(By.cssSelector("[href='/home']"));
+        WebElement el3= wd.findElement(By.cssSelector("[href='/login']"));
 
-        WebElement el5= wd.findElement(By.name("[name='login']"));
-        WebElement el6= wd.findElement(By.cssSelector("[name='login']"));
+        WebElement el4= wd.findElement(By.cssSelector("[name='login']"));
 
-        WebElement el7= wd.findElement(By.cssSelector("[href='/about']"));
-        WebElement el8= wd.findElement(By.cssSelector("[fdprocessedid='q8vs8p']"));
+        WebElement el5= wd.findElement(By.cssSelector("[href='/about']"));
 
-        WebElement el9= wd.findElement(By.cssSelector("[fdprocessedid='4ou8bw']"));
-        WebElement el10= wd.findElement(By.cssSelector("button"));
+        WebElement el6= wd.findElement(By.cssSelector("button"));
 
         WebElement inputEmail=wd.findElement(By.cssSelector("[name='email']"));
         WebElement inputPassword=wd.findElement(By.cssSelector("[name='password']"));
@@ -65,9 +61,5 @@ public class HomeWork1 {
         WebElement inputEmail1=wd.findElement(By.cssSelector("[placeholder='Email']"));
         WebElement inputPassword1=wd.findElement(By.cssSelector("[placeholder='Password']"));
 
-        WebElement inputEmail2=wd.findElement(By.cssSelector("[fdprocessedid='eun8mr']"));
-        WebElement inputPassword2=wd.findElement(By.cssSelector("[fdprocessedid='fq76h']"));
-
-        List<WebElement> list3= wd.findElements(By.cssSelector("type='submit'"));
     }
 }
