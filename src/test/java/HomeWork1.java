@@ -18,6 +18,36 @@ public class HomeWork1 {
     }
 
     @Test
+    public void classWork(){
+        System.out.println("=======================================================================");
+
+        WebElement element=wd.findElement(By.cssSelector("[name='login']"));
+        String text=element.getText();
+        System.out.println(text);
+
+        System.out.println("=======================================================================");
+
+        WebElement form=wd.findElement(By.xpath("//form"));
+        String textForm=form.getText();
+        System.out.println(textForm);
+
+        System.out.println("=======================================================================");
+
+        WebElement ntml=wd.findElement(By.tagName("html"));
+        String textAll=form.getText();
+        System.out.println(textAll);
+
+        System.out.println("=======================================================================");
+
+        WebElement br=wd.findElement(By.tagName("br"));
+        String textBr=form.getText();
+        System.out.println(textBr);
+
+        System.out.println("=======================================================================");
+
+    }
+
+    @Test
     public void cssSelectors(){
         //by tag name
         WebElement body=wd.findElement(By.tagName("body"));
