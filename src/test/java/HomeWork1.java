@@ -158,5 +158,28 @@ public class HomeWork1 {
         List<WebElement>precedList1=wd.findElements(By.xpath("//input[last()]/preceding-sibling::*"));
     }
 
+    @Test
+    public void xPathSelectorsCheckingHW(){
+        //by tag name
+        WebElement body=wd.findElement(By.xpath("//body"));
+        WebElement h1=wd.findElement(By.xpath("//h1"));
+        //by class
+        WebElement el1=wd.findElement(By.xpath("//*[@class='container']"));
+        //by id
+        WebElement id= wd.findElement(By.xpath("//*[@id='root']"));
+        //by attribute
+        WebElement el2= wd.findElement(By.xpath("//*[@name='registration']"));
+        //=================================================================================================
+        //=======================
+        WebElement el4=wd.findElement(By.cssSelector("[placeholder^='Em']"));
+        WebElement inputEmail3=wd.findElement(By.xpath("//input[starts-with (@placeholder,'Em')]"));
+        //=======================
+        WebElement el5=wd.findElement(By.cssSelector("[placeholder$='word']"));
+        WebElement inputPassword2=wd.findElement(By.xpath("//input[contains(@placeholder,'word')]"));
+        //=======================
+        WebElement el6=wd.findElement(By.cssSelector("[placeholder*='ma']"));
+        WebElement inputPassword3=wd.findElement(By.xpath("//input[contains(@placeholder,'ma')]"));
+        //=================================================================================================
+    }
 
 }
